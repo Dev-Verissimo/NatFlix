@@ -19,20 +19,103 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
   
 }
 
+*{
+	list-style: none;
+	box-sizing: border-box;
+
+	margin: 0;
+	padding: 0;
+}
+
 /*BODY*/
 	body{
+		background-color: #b1269e;
+
+		display: flex;
+		justify-content: center;
+		flex-flow: column nowrap;
+		
+
+		font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 
 	}
 
 /*TOPO*/
 	header.topo{
-		
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 40vh;
+
+		display: flex;
+		justify-content: center;
+
+		/* background-image: linear-gradient(to top, red, blue); */
+	}
+
+	header.topo img{
+		width: 200px;
+		/* margin: 0;
+		margin: 0 auto; */
 	}
 
 /*RODAPÉ*/
 	
 
 /*PÁGINA INICIAL*/
-	div.pg-home{
+	.pg-home {
+		max-width: 858px;
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+	}
+
+	div.pg-home ul{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+
+		margin-left: 16%;
+		margin-right: 16%;
 		
+		
+
+	}
+
+	div.pg-home ul li {
+		flex-grow: 2;
+		/* margin: 70px; */
+		
+		
+
+	}
+	.pg-home img:focus{
+		border: 2px solid white;
+	}
+
+	.pg-home img{
+		width: 186px;
+	}
+
+	.addPerfil img {
+		width: 90px;
+		/* height: 20px; */
+	}
+
+	.addPerfil figure{
+		margin:47px auto;
+	}
+	
+
+	/* figure{
+		width: 70%;
+	} */
+
+	header > h2 {
+		color: antiquewhite;
+		text-align: center;
+		font-size: 49px;
+
+		margin: 20px 0 80px;
+
 	}
